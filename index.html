@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Survey Form</h1>
+        <p>We'd love to hear your thoughts!</p>
+
+        <form action="submit-survey" method="POST">
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Age -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="10" max="100" placeholder="Enter your age" required>
+
+            <!-- Gender -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">--Select your gender--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Experience with surveys -->
+            <label>Have you taken a survey before?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="experience" value="yes" required>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="experience" value="no" required>
+                <label for="no">No</label>
+            </div>
+
+            <!-- Feedback -->
+            <label for="feedback">Additional Comments:</label>
+            <textarea id="feedback" name="feedback" rows="5" placeholder="Tell us anything..." required></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
