@@ -75,15 +75,3 @@ button {
 button:hover {
     background-color: #4cae4c;
 }
-
-@media (max-width: 768px) {
-    .container {
-        width: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        width: 95%;
-    }
-}
